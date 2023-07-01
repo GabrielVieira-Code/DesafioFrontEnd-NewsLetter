@@ -1,6 +1,6 @@
 .container{
     background-color: rgb(255, 255, 255);
-    height: 45em;
+    height: 40em;
     width: 55em;
     position: relative;
     margin-left: auto;
@@ -24,7 +24,7 @@ li {
   }
   .svg{
     position: relative;
-    top: -15em;
+    top: -25em;
     left: 29em;
   }
   .containerEmail{
@@ -35,6 +35,8 @@ li {
   }
   ul{
     padding: 0;
+    position: relative;
+    bottom: 8em;
   }
 
 .alingOptions{
@@ -42,18 +44,32 @@ li {
 }
 h1{
   position: relative;
-  bottom:1em;
+  bottom:2em;
   font-family: 'Roboto', sans-serif;
-  font-size: 3em;
+  font-size: 60px;
 }
-p{
-  font-size: 16px;
+.textProduct{
+  font-size: 20px;
+  position: relative;
+  top: auto;
+
+  bottom: 7em
+ 
 }
 html {
   margin: 0;
   padding: 0;
 }
-.svg{
-
-
+.textEmail{
+  font-size: 20px;
+  position: relative;
+  top: auto;
+  bottom: 6em
+}
+input{
+  position: relative;
+  top: auto;
+  bottom: 8em;
+  width: 25em;
+  height: 4em;
 }
