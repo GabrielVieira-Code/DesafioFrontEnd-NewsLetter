@@ -1,16 +1,17 @@
 .container{
     background-color: rgb(255, 255, 255);
     height: 40em;
-    width: 55em;
+    width: 58em;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20em;
-    border: solid;
+    border: solid transparent;
     border-radius: 35px;
+    
 }
 body{
-    background-color: black;
+    background-color: hsl(235, 18%, 26%);
      /* position: relative; */
      margin: 0;
      height: 100%;
@@ -21,11 +22,12 @@ li {
     list-style-type: none;
     padding-left: 13px;
     padding-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
   }
   .svg{
     position: relative;
-    top: -25em;
-    left: 29em;
+    top: -30em;
+    left: 32em;
   }
   .containerEmail{
     /* background-color: black; */
@@ -52,6 +54,8 @@ h1{
   font-size: 20px;
   position: relative;
   top: auto;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 
   bottom: 7em
  
@@ -64,12 +68,47 @@ html {
   font-size: 20px;
   position: relative;
   top: auto;
-  bottom: 6em
+  bottom: 6em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 input{
   position: relative;
-  top: auto;
   bottom: 8em;
   width: 25em;
-  height: 4em;
+  border-radius: 5px;
+  background: rgb(249, 250, 250);
+  border: 1px solid rgb(181, 189, 196);
+  font-size: 16px;
+  height: 40px;
+  line-height: 24px;
+  padding: 7px 8px;
+  color: rgb(8, 9, 10);
+  box-shadow: none;
+
+}
+.Submit{
+  position: relative;
+  bottom: 8em;
+  width: 26em;
+  border-radius: 5px;
+  background: hsl(235, 18%, 26%);
+  border: 1px solid rgb(181, 189, 196);
+  font-size: 16px;
+  height: 55px;
+  line-height: 24px;
+  padding: 7px 8px;
+  color: rgb(8, 9, 10);
+  box-shadow: none;
+  color: white;
+  margin-top: 1em;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px)
+{
+  body{
+    background-color: aliceblue;
+  }
 }
