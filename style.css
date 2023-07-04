@@ -108,7 +108,59 @@ input{
 
 @media (max-width: 600px)
 {
-  body{
-    background-color: aliceblue;
-  }
+  .container{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20em;
+    border: solid transparent;
+    border-radius: 0px;
+    margin: 0;
+    
+}
+html{
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+  
+    .svg{
+      width: 700px;
+      height: 500px;
+      /* height: 100%; */
+
+      /* margin: 0; */
+
+      position: absolute;
+      top: 0em; 
+      /* bottom:  300000em; */
+       left: 5em;
+    }
+    .containerEmail{
+        /* background-color: black; */
+    position: relative;
+    top:12em;
+    left:2em;
+    }
+    h1{
+      position: absolute;
+      top:-5em;
+      font-family: 'Roboto', sans-serif;
+      font-size: 60px;
+    }
+    .containerEmail{
+      /* background-color: black; */
+      position: relative;
+      top:40em;
+      left:0em;
+    }
+    ul{
+      padding: 0;
+      position: relative;
+      bottom: 7em;
+    }
+  
 }
