@@ -15,6 +15,7 @@ body{
      /* position: relative; */
      margin: 0;
      height: 100%;
+     overflow: hidden;
     
     /* min-height: 100vh; */
 }
@@ -129,15 +130,16 @@ html{
   
     .svg{
       width: 700px;
-      height: 500px;
+      height: 900px;
       /* height: 100%; */
 
       /* margin: 0; */
 
       position: absolute;
-      top: 0em; 
+      left: -8em;
+      top: -30em; 
+     
       /* bottom:  300000em; */
-       left: 5em;
     }
     .containerEmail{
         /* background-color: black; */
@@ -149,18 +151,40 @@ html{
       position: absolute;
       top:-5em;
       font-family: 'Roboto', sans-serif;
-      font-size: 60px;
+      font-size: 65px;
     }
     .containerEmail{
       /* background-color: black; */
       position: relative;
-      top:40em;
-      left:0em;
+      top:45em;
+      left:1em;
     }
     ul{
       padding: 0;
       position: relative;
-      bottom: 7em;
+      bottom: 9em;
     }
-  
+
+    .textProduct{
+      font-size: 25px;
+      position: relative;
+      top: auto;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+    
+      bottom: 7em
+    }
+    li{
+      list-style-type: none;
+      padding-left: 13px;
+      font-family: 'Roboto', sans-serif;
+      padding: 1em;
+      position: relative;
+      font-size: 25px;
+      bottom: 16px;
+    }
+    .circle{
+      width: 30px;
+      height: 50px;
+    }
 }
