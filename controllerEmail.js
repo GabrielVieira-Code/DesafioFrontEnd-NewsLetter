@@ -1,22 +1,21 @@
-const nodemailer = require('nodemailer');
+const sendEmail =  ()=>{
+    const inputEmail = document.getElementById("dateInput");
 
-const transport =  nodemailer.createTransport({
-    host: 'smtp.office365.com',
-    port: 587,
-    secure: false,
-    auth:{
-        user:'socorro763testenode@outlook.com',
-        pass:'casaverde164',
-    }
-})
-transport.sendMail({
-    from:'gabriel <socorro763testenode@outlook.com>',
-    to:'gabrielvieira.code@gmail.com',
-    subject:'assunto',
-    html:'<p>foi que foi</p>',
-    text:'ola',
-})
-.then(()=>{
-    console.log('erro')
-}).catch((err)=>{console.log('erro ao enviar ',err)
-})
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    const email = JSON.stringify({
+      "to": inputEmail.value,
+    });
+
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: email,
+      redirect: "follow"
+    };
+    fetch("http://localhost:3333/sendemail", requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
+}

@@ -1,14 +1,18 @@
 .container{
     background-color: rgb(255, 255, 255);
-    height: 41em;
+    height: 37em;
     width: 48em;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 9em;
+    margin-top: 5em;
     border: solid transparent;
     border-radius: 35px;
     
+}
+#dateInput{
+
+  border: 'red';
 }
 body{
     background-color: hsl(235, 18%, 26%);
@@ -27,14 +31,14 @@ li{
   }
   .svg{
     position: relative;
-    top: -31em;
+    top: -32em;
     left: 32em;
-    transform: scaleY(1.7);
+    transform: scaleY(1.5);
   }
   .containerEmail{
     /* background-color: black; */
     position: relative;
-    top:12em;
+    top:10em;
     left:2em;
   }
   /* #username{
@@ -55,6 +59,7 @@ li{
   display: flex;
 }
 h1{
+  margin-left: 90px;
   position: relative;
   bottom:3em;
   font-family: 'Roboto', sans-serif;
@@ -67,7 +72,7 @@ h1{
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 
-  bottom: 10em
+  bottom: 8em
  
 }
 html {
@@ -80,6 +85,7 @@ html {
   top: auto;
   bottom: 6em;
   font-weight: bold;
+ color: white;
   /* display: inline; */
   font-family: 'Roboto', sans-serif;
 }
@@ -113,6 +119,7 @@ input{
   box-shadow: none;
   color: white;
   margin-top: 1em;
+  cursor: pointer;
 }
 span{
   
@@ -154,19 +161,19 @@ html{
   padding: 0;
 }
   
-    .svg{
+    /* .svg{
       width: 200px;
       height: 400px;
       /* height: 100%; */
 
       /* margin: 0; */
 
-      position: absolute;
-      left: -8em;
-      top: -30em; 
+      /* position: absolute;
+      left: -32em;
+      top: -30em;  */
      
       /* bottom:  300000em; */
-    }
+    /* }  */
     .containerEmail{
         /* background-color: black; */
     position: relative;

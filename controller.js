@@ -7,6 +7,8 @@ function emailvalidation(field) {
 
         let textEmail =  document.getElementById("textEmail");
         let inputError = document.getElementById('username')
+        let dateInput = document.getElementById('dateInput')
+
         var novaTagFilha = document.createElement('span');
         if ((usuario.length >=1) &&
             (dominio.length >=3) &&
@@ -18,6 +20,7 @@ function emailvalidation(field) {
             (dominio.indexOf(".") >=1)&&
             (dominio.lastIndexOf(".") < dominio.length - 1)) {
                 alert("E-mail valido");
+                // dateInput.style.border='red'
         let inputElement=document.getElementById("userName");
     }
     else{
@@ -25,28 +28,19 @@ function emailvalidation(field) {
         textEmail.appendChild(novaTagFilha);
         
         novaTagFilha.textContent = 'Email invalido';
-        inputError.style.border = '1px solid red'
+        // inputError.style.border = '1px solid red';
         
         setTimeout(() => {
             novaTagFilha.style.display = 'none'
             inputError.style.border = 'rgb(181, 189, 196)'
+            let dateInput = document.querySelector('input');
+            dateInput.style.border = '2px solid red'
             console.log(inputError);
-        }, 1000);
+        }, 2000);
     }
     stateEmailValidation = false
     setTimeout(()=>{
 stateEmailValidation=true
     },1500)
-    } 
-
-
-
-
-
-
-
-
-
-
-        
+    }      
 }

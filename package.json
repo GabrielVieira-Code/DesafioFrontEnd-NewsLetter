@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemailer": "^6.9.7"
+    "nodemailer": "^6.9.9"
   }
 }
